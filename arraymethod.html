@@ -1,0 +1,48 @@
+<script>
+    let arr = [10,20,30,40,50];
+    console.log("Intial arr:", arr);
+    arr.push(60);
+    console.log("After push:", arr);
+
+arr.unshift(5);
+console.log("After unhift:", arr);
+
+arr.pop();
+console.log("After pop:", arr);
+
+arr.shift();
+console.log("After shift:", arr);
+
+arr[1] = 200;
+console.log("After replacing:", arr);
+
+arr[4] = 500;
+console.log("After replacing:", arr);
+
+arr1 = [100,200,300,400,500,600];
+let deleted_ele = arr1.splice(2, 3, 900, 800);
+console.log(deleted_ele);
+console.log("After splice arr1:", arr1);
+
+li = ['y', 'A', 's', 'w'];
+del = li.splice(1, 2, 900);
+console.log(deleted_ele);
+console.log("After splice:", li);
+
+
+</script>
+<!--
+push():Adds ele at the end of an array.
+unshift(): Adds ele at 0th index.
+pop(): removes last digit.
+shift(): removes 0th index.
+splice(start index, delete count, element to be added):
+splice returns deleted elemnts.
+splice returns deleted elements.
+slice(start index, end index-1):creats sub array(does not change original array).
+indexof(ele): returns index of specific ele.
+include(ele): checks if an element present in array or not
+returns either true or false.
+
+sort(): sort the elements alphabetical order.
+reverse(): reverse the elements in original array  -->
